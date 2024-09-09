@@ -28,6 +28,9 @@ ul {
   list-style: none;
   padding: 0;
 }
+ul li a {
+  text-decoration: none;
+}
 
 ::-webkit-scrollbar {
   width: 15px;
@@ -49,3 +52,34 @@ ul {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
+.page .side-bar {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+.page .side-bar h3::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -15px;
+}
+.page .side-bar h3::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: solid white 4px;
+  top: 32px;
+}
+.page .side-bar li.active,
+.page .side-bar li:hover {
+  background-color: #f1f5f9;
+  transition: 0.4s;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
