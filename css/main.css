@@ -167,4 +167,71 @@ ul li a {
 }
 .page .content .yearly .prog span span.green::before {
   border-color: var(--green-color) transparent transparent transparent;
+}
+.page .content .lastProject p::before, .page .content .lastProject p::after {
+  position: absolute;
+  content: "";
+  background-color: var(--blue-color);
+}
+.page .content .lastProject p::before {
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: var(--blue-color) solid;
+  padding: 10px;
+  border: solid white;
+  transition: 0.4s;
+}
+.page .content .lastProject p:not(:last-child):after {
+  width: 2px;
+  height: 40px;
+  left: 15px;
+  top: 30px;
+}
+.page .content .social .box i {
+  left: 0;
+  padding: 10px;
+  transition: 0.4s;
+}
+.page .content .social .box i:hover {
+  transform: rotate(12deg);
+}
+.page .content .projects .responsive-table {
+  overflow-x: auto;
+}
+.page .content .projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.page .content .projects thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+.page .content .projects table td {
+  padding: 15px;
+}
+.page .content .projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+.page .content .projects table tbody tr td:last-child {
+  border-right: 1px solid #eee;
+}
+.page .content .projects tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.page .content .projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.page .content .projects table img:not(:first-child) {
+  margin-left: -20px;
+}
+.page .content .projects table .label {
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */
