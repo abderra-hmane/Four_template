@@ -234,4 +234,44 @@ ul li a {
 }
 .page .content .projects table .label {
   font-size: 13px;
+}
+
+.toogle .toogle-check {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+}
+.toogle .toogle-check:checked + .toogle-container {
+  background-color: var(--blue-color);
+}
+.toogle .toogle-check:checked + .toogle-container::before {
+  content: "\f00c";
+  left: 90px;
+  color: var(--blue-color);
+}
+.toogle .toogle-container {
+  background-color: var(--bs-border-color);
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  height: 34px;
+  width: 120px;
+  transition: 0.4s;
+}
+.toogle .toogle-container::before {
+  content: "\f00d";
+  position: absolute;
+  transition: 0.4s;
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  left: 5px;
+  font-family: var(--fa-style-family-classic);
 }/*# sourceMappingURL=main.css.map */
