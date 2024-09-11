@@ -88,4 +88,114 @@ ul {
             cursor: pointer;
         }
     }
+
+    .header {
+        input {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-left: 5px;
+            padding: 0 0 0 30px;
+            width: 160px;
+            transition: 0.3s;
+            line-height: 2;
+
+            &:focus {
+                width: 200px;
+            }
+        }
+
+        .input i {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            margin-left: 10px;
+            color: #ccc;
+        }
+
+        .info {
+            img {
+                width: 34px;
+            }
+        }
+    }
+
+    .content {
+        .special-heading {
+            font-weight: bold;
+
+            // margin-left: 20px;
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -20px;
+                height: 3px;
+                left: 0;
+            }
+
+            &::before {
+                background-color: white;
+                width: 120px;
+            }
+
+            &::after {
+                background-color: black;
+                width: 40px;
+            }
+        }
+
+        .welcome .image {
+            width: 60px;
+            top: 165px;
+            border: 2px solid white;
+            border-radius: 50%;
+            padding: 2px;
+            box-shadow: 0 0 5px #ddd;
+            margin-left: 20px;
+            margin-top: -32px;
+        }
+
+        .welcome .body {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .yearly {
+            .prog {
+                height: 5px;
+
+                & span span {
+                    position: absolute;
+                    bottom: 16px;
+                    right: -16px;
+                    color: white;
+                    padding: 2px 5px;
+                    border-radius: 6px;
+                    font-size: 13px;
+                    background-color: var(--blue-color);
+
+                    &.blue::before,
+                    &.orange::before,
+                    &.green::before{
+                        position: absolute;
+                        content: "";
+                        border-width: 5px;
+                        border-style: solid;
+                        bottom: -10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &.blue::before {
+                        border-color:var(--blue-color) transparent transparent  transparent;
+                    }
+                    &.orange::before {
+                        border-color:var(--orange-color) transparent transparent  transparent;
+                    }
+                    &.green::before {
+                        border-color:var(--green-color) transparent transparent  transparent;
+                    }
+                }
+            }
+        }
+    }
 }

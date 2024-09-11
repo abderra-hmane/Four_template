@@ -82,4 +82,89 @@ ul li a {
   background-color: #f1f5f9;
   transition: 0.4s;
   cursor: pointer;
+}
+.page .header input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 0 0 0 30px;
+  width: 160px;
+  transition: 0.3s;
+  line-height: 2;
+}
+.page .header input:focus {
+  width: 200px;
+}
+.page .header .input i {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-left: 10px;
+  color: #ccc;
+}
+.page .header .info img {
+  width: 34px;
+}
+.page .content .special-heading {
+  font-weight: bold;
+}
+.page .content .special-heading::before, .page .content .special-heading::after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  height: 3px;
+  left: 0;
+}
+.page .content .special-heading::before {
+  background-color: white;
+  width: 120px;
+}
+.page .content .special-heading::after {
+  background-color: black;
+  width: 40px;
+}
+.page .content .welcome .image {
+  width: 60px;
+  top: 165px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 0 5px #ddd;
+  margin-left: 20px;
+  margin-top: -32px;
+}
+.page .content .welcome .body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.page .content .yearly .prog {
+  height: 5px;
+}
+.page .content .yearly .prog span span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: var(--blue-color);
+}
+.page .content .yearly .prog span span.blue::before, .page .content .yearly .prog span span.orange::before, .page .content .yearly .prog span span.green::before {
+  position: absolute;
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page .content .yearly .prog span span.blue::before {
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+.page .content .yearly .prog span span.orange::before {
+  border-color: var(--orange-color) transparent transparent transparent;
+}
+.page .content .yearly .prog span span.green::before {
+  border-color: var(--green-color) transparent transparent transparent;
 }/*# sourceMappingURL=main.css.map */
