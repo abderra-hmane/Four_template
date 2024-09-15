@@ -1,0 +1,103 @@
+
+.toogle {
+    .toogle-check {
+        appearance: none;
+        display: none;
+
+    }
+
+    .toogle-check:checked+ {
+        .toogle-container {
+            background-color: var(--blue-color);
+        }
+
+        .toogle-container::before {
+            content: "\f00c";
+            left: 90px;
+            color: var(--blue-color);
+        }
+    }
+
+    .toogle-container {
+        background-color: var(--bs-border-color);
+        border-radius: 25px;
+        position: relative;
+        cursor: pointer;
+        height: 34px;
+        width: 120px;
+        transition: .4s;
+
+        &::before {
+            content: "\f00d";
+            position: absolute;
+            transition: .4s;
+            font-weight: 900;
+            background-color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 5px;
+            left: 5px;
+            font-family: var(--fa-style-family-classic);
+        }
+
+    }
+}
+
+.check-box {
+    input {
+        appearance: none;
+        display: none;
+
+        &:checked+ {
+            .checkbox-container {
+                &::before {
+                    content: "\f00c";
+                    font-family: var(--fa-style-family-classic);
+                    font-weight: 900;
+                    background-color: var(--blue-color);
+                    color: white;
+                    transform: scale(1) rotate(0);
+                }
+            }
+        }
+    }
+
+
+    .checkbox-container {
+        padding-left: 25px;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            border: solid 2px var(--grey-color);
+            border-radius: 5px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: 11%;
+            transition: 0.4s;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            transform: scale(0) rotate(360deg);
+        }
+    }
+}
+
